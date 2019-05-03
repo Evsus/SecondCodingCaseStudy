@@ -1,0 +1,58 @@
+package Inventory_item;
+    sub new {
+        my($class)  = shift;
+        my(%params) = @_;
+        bless {
+            "PART_NUM"    => $params{"PART_NUM"},
+            "QTY_ON_HAND" => $params{"QTY_ON_HAND"}
+        }, $class;
+    }
+
+
+    sub qtyChange {
+        my($self)  = shift;
+        my($delta)  = $_[0] ? $_[0] : 1;
+
+        $self->{"QTY_ON_HAND"} += $delta;
+    }
+
+package Pen;
+    @ISA = ("Inventory_item");
+    @PARENT::ISA = @ISA;
+
+    sub new {
+        my($class) = shift;
+        my(%params) = @_;
+        my($self) = $class->PARENT::new(@_);
+
+        $self->{"INK_COLOR"} = $params{"INK_COLOR"};
+
+        return($self);
+    }
+
+    sub qtyChange {
+        my($self)  = shift;
+        my($delta)  = $_[0] ? $_[0] : 100;
+        $self->PARENT::qtyChange($delta);
+    }
+
+    
+package main;
+
+    $pen = Pen->new(
+        "PART_NUM"=>"12A-34",
+        "QTY_ON_HAND"=>340,
+        "INK_COLOR" => "blue");
+
+    print("The data type is "   . ref($pen)             . "\n");
+    print("The part number is " . $pen->{'PART_NUM'}    . "\n");
+    print("The quantity is "    . $pen->{'QTY_ON_HAND'} . "\n");
+    print("The ink color is "   . $pen->{'INK_COLOR'}   . "\n");
+
+    $pen->qtyChange();
+    print("\n");
+    print("The quantity is "    . $pen->{'QTY_ON_HAND'} . "\n");
+    
+    
+    #reference website
+    #http://users.cs.cf.ac.uk/Dave.Marshall/PERL/node128.html

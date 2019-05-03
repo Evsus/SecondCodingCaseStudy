@@ -1,0 +1,84 @@
+Script started on Tue 06 Nov 2018 01:16:11 AM UTC
+Checking TrussAnalysisApp.lua                     [0m[32m[1mOK[0m
+
+Total: [0m[0m[1m0[0m warnings / [0m[0m[1m0[0m errors in 1 file
+
+test complete
+--------------------------------
+
+Support for half of bridge = 16750lbs
+Total tension in BD = -17464lbs
+Total tension in DF = -31032lbs
+
+Total tension in AB = -18186lbs
+Total tension in BC = 17320lbs
+Total tension in CD = -14433lbs
+Total tension in DE = 13279lbs
+
+Total tension in AC = 9093lbs
+Total tension in CE = 24681lbs
+
+
+1..9
+# Started on Tue Nov  6 01:16:11 2018
+# Starting class: testBaseCase
+Support for half of bridge = 17250lbs
+Total tension in BD = -18619lbs
+Total tension in DF = -34496lbs
+
+Total tension in AB = -19341lbs
+Total tension in BC = 18475lbs
+Total tension in CD = -16743lbs
+Total tension in DE = 15588lbs
+
+Total tension in AC = 9670lbs
+Total tension in CE = 26991lbs
+
+
+not ok 1	testBaseCase.testPierForce
+#   testTrussAnalysisApp.lua:36: expected: 16750, actual: 17250
+#   stack traceback:
+#   	testTrussAnalysisApp.lua:36: in function 'testBaseCase.testPierForce'
+ok     2	testBaseCase.testTensionAtAinAB
+ok     3	testBaseCase.testTensionAtAinAC
+ok     4	testBaseCase.testTensionAtBinBC
+ok     5	testBaseCase.testTensionAtBinBD
+ok     6	testBaseCase.testTensionAtCinCD
+ok     7	testBaseCase.testTensionAtCinCE
+ok     8	testBaseCase.testTensionAtDinDE
+ok     9	testBaseCase.testTensionAtDinDF
+# Ran 9 tests in 0.001 seconds, 8 successes, 1 failure
+Script started on Tue 06 Nov 2018 01:18:50 AM UTC
+Checking TrussAnalysisApp.lua                     [0m[32m[1mOK[0m
+
+Total: [0m[0m[1m0[0m warnings / [0m[0m[1m0[0m errors in 1 file
+
+test complete
+--------------------------------
+
+Support for half of bridge = 16750lbs
+Total tension in BD = -17464lbs
+Total tension in DF = -31032lbs
+
+Total tension in AB = -18186lbs
+Total tension in BC = 17320lbs
+Total tension in CD = -14433lbs
+Total tension in DE = 13279lbs
+
+Total tension in AC = 9093lbs
+Total tension in CE = 24681lbs
+
+
+1..9
+# Started on Tue Nov  6 01:18:50 2018
+# Starting class: testBaseCase
+ok     1	testBaseCase.testPierForce
+ok     2	testBaseCase.testTensionAtAinAB
+ok     3	testBaseCase.testTensionAtAinAC
+ok     4	testBaseCase.testTensionAtBinBC
+ok     5	testBaseCase.testTensionAtBinBD
+ok     6	testBaseCase.testTensionAtCinCD
+ok     7	testBaseCase.testTensionAtCinCE
+ok     8	testBaseCase.testTensionAtDinDE
+ok     9	testBaseCase.testTensionAtDinDF
+# Ran 9 tests in 0.001 seconds, 9 successes, 0 failures

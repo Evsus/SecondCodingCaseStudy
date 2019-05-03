@@ -1,0 +1,6 @@
+local userInteger
+repeat
+    io.write("Please enter an integer between 1 and 10: ")
+    userInteger = tonumber(io.read())
+until(userInteger >= 1 and userInteger <= 10)
+io.write(string.rep("Congratulations!\n", userInteger))

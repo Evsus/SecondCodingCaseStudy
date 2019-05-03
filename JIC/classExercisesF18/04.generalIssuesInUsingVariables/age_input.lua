@@ -1,0 +1,7 @@
+print("what's your name and age?")
+io.write("name: ")
+name = io.read()
+io.write("age: ")
+age = io.read("*n")
+io.write()
+io.write("Hello, ", name, "!", " How do you like being ", age, " years old?", "\n")

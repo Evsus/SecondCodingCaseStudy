@@ -1,0 +1,9 @@
+and stay 
+https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm
+
+---script to be placed in usr/local/bin to use the linter and capture test run---
+#!/bin/bash
+luacheck $@
+printf "\ntest complete\n-----------------------\n\n"
+script -a -q -c "lua $@" testResults
+exit

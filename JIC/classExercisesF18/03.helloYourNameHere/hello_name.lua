@@ -1,0 +1,5 @@
+print("what's your name?")
+io.write("name: ")
+name = io.read()
+io.write("Hello, ")
+io.write(name, "!", "\n")
